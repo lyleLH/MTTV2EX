@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void (^BOOLBlock)(BOOL result);
+typedef void (^VoidBlock)();
+typedef void (^DictionaryBlock)(NSDictionary *result);
+typedef void (^ArrayBlock)(NSArray *result);
+typedef void (^StringBlock)(NSString *result);
+
 @interface MTTBaseModel : NSObject
 
 @end

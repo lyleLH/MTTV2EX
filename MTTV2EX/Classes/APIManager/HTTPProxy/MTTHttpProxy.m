@@ -1,11 +1,13 @@
 //
-//  MTTV2EX-Prefix.m
+//  MTTHttpProxy.m
 //  MTTV2EX
 //
 //  Created by lyleKP on 2017/3/30.
 //  Copyright © 2017年 lyle. All rights reserved.
 //
-#ifdef __OBJC__
-#import "Categories.h"
-#import "MTTNotificationName.h"
-#endif
+
+#import "MTTHttpProxy.h"
+
+@implementation MTTHttpProxy
+
+@end

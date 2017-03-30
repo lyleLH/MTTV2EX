@@ -10,6 +10,17 @@
 		58A8545C7B25D7E4AC212379 /* libPods-MTTV2EX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6500B0032FDE32B33584640D /* libPods-MTTV2EX.a */; };
 		98474B881E8CB8BA00A250FD /* MTTNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98474B871E8CB8BA00A250FD /* MTTNavigationViewController.m */; };
 		98474B8B1E8CB8EB00A250FD /* MTTTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98474B8A1E8CB8EB00A250FD /* MTTTabBarController.m */; };
+		98474B971E8CD4F600A250FD /* MTTNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 98474B961E8CD4F600A250FD /* MTTNetworkManager.m */; };
+		98474B9A1E8CD51B00A250FD /* MTTRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 98474B991E8CD51B00A250FD /* MTTRequest.m */; };
+		98474B9D1E8CD52600A250FD /* MTTResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 98474B9C1E8CD52600A250FD /* MTTResponse.m */; };
+		98474BA11E8CD5BC00A250FD /* MTTHttpProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 98474BA01E8CD5BC00A250FD /* MTTHttpProxy.m */; };
+		98474BA41E8CDCB800A250FD /* MTTAPIResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 98474BA31E8CDCB800A250FD /* MTTAPIResource.m */; };
+		98474BA81E8CDE1600A250FD /* MTTUSer.m in Sources */ = {isa = PBXBuildFile; fileRef = 98474BA71E8CDE1600A250FD /* MTTUSer.m */; };
+		98474BAB1E8CDF2600A250FD /* NSObject+MTTCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 98474BAA1E8CDF2600A250FD /* NSObject+MTTCategory.m */; };
+		98474BAF1E8CDFD400A250FD /* NSObject+MTTCommonDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 98474BAE1E8CDFD400A250FD /* NSObject+MTTCommonDefine.m */; };
+		98474BB31E8CE8A000A250FD /* UIViewController+MTTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 98474BB21E8CE8A000A250FD /* UIViewController+MTTExtensions.m */; };
+		98474BB61E8CE94200A250FD /* UIViewController+MTTHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 98474BB51E8CE94200A250FD /* UIViewController+MTTHUD.m */; };
+		98474BB91E8CECFD00A250FD /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 98474BB81E8CECFD00A250FD /* UIView+Toast.m */; };
 		9854C96F1E8CB389002F66D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9854C96E1E8CB389002F66D5 /* main.m */; };
 		9854C9721E8CB38A002F66D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9854C9711E8CB38A002F66D5 /* AppDelegate.m */; };
 		9854C9751E8CB38A002F66D5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9854C9741E8CB38A002F66D5 /* ViewController.m */; };
@@ -30,6 +41,30 @@
 		98474B891E8CB8EB00A250FD /* MTTTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTTabBarController.h; sourceTree = "<group>"; };
 		98474B8A1E8CB8EB00A250FD /* MTTTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTTabBarController.m; sourceTree = "<group>"; };
 		98474B941E8CD3C900A250FD /* MTTV2EX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MTTV2EX-Prefix.pch"; sourceTree = "<group>"; };
+		98474B951E8CD4F600A250FD /* MTTNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTNetworkManager.h; sourceTree = "<group>"; };
+		98474B961E8CD4F600A250FD /* MTTNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTNetworkManager.m; sourceTree = "<group>"; };
+		98474B981E8CD51B00A250FD /* MTTRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTRequest.h; sourceTree = "<group>"; };
+		98474B991E8CD51B00A250FD /* MTTRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTRequest.m; sourceTree = "<group>"; };
+		98474B9B1E8CD52600A250FD /* MTTResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTResponse.h; sourceTree = "<group>"; };
+		98474B9C1E8CD52600A250FD /* MTTResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTResponse.m; sourceTree = "<group>"; };
+		98474B9F1E8CD5BC00A250FD /* MTTHttpProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTHttpProxy.h; sourceTree = "<group>"; };
+		98474BA01E8CD5BC00A250FD /* MTTHttpProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTHttpProxy.m; sourceTree = "<group>"; };
+		98474BA21E8CDCB800A250FD /* MTTAPIResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTAPIResource.h; sourceTree = "<group>"; };
+		98474BA31E8CDCB800A250FD /* MTTAPIResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTAPIResource.m; sourceTree = "<group>"; };
+		98474BA61E8CDE1600A250FD /* MTTUSer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTUSer.h; sourceTree = "<group>"; };
+		98474BA71E8CDE1600A250FD /* MTTUSer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTUSer.m; sourceTree = "<group>"; };
+		98474BA91E8CDF2600A250FD /* NSObject+MTTCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MTTCategory.h"; sourceTree = "<group>"; };
+		98474BAA1E8CDF2600A250FD /* NSObject+MTTCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MTTCategory.m"; sourceTree = "<group>"; };
+		98474BAC1E8CDF5B00A250FD /* Categories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Categories.h; sourceTree = "<group>"; };
+		98474BAD1E8CDFD400A250FD /* NSObject+MTTCommonDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MTTCommonDefine.h"; sourceTree = "<group>"; };
+		98474BAE1E8CDFD400A250FD /* NSObject+MTTCommonDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MTTCommonDefine.m"; sourceTree = "<group>"; };
+		98474BB01E8CE82300A250FD /* MTTNotificationName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTTNotificationName.h; sourceTree = "<group>"; };
+		98474BB11E8CE8A000A250FD /* UIViewController+MTTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MTTExtensions.h"; sourceTree = "<group>"; };
+		98474BB21E8CE8A000A250FD /* UIViewController+MTTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MTTExtensions.m"; sourceTree = "<group>"; };
+		98474BB41E8CE94200A250FD /* UIViewController+MTTHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MTTHUD.h"; sourceTree = "<group>"; };
+		98474BB51E8CE94200A250FD /* UIViewController+MTTHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MTTHUD.m"; sourceTree = "<group>"; };
+		98474BB71E8CECFD00A250FD /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		98474BB81E8CECFD00A250FD /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
 		9854C96A1E8CB389002F66D5 /* MTTV2EX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTTV2EX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9854C96E1E8CB389002F66D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9854C9701E8CB38A002F66D5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -72,6 +107,16 @@
 		98474B8C1E8CB92E00A250FD /* APIManager */ = {
 			isa = PBXGroup;
 			children = (
+				98474B9E1E8CD58800A250FD /* HTTPProxy */,
+				98474B951E8CD4F600A250FD /* MTTNetworkManager.h */,
+				98474B961E8CD4F600A250FD /* MTTNetworkManager.m */,
+				98474B981E8CD51B00A250FD /* MTTRequest.h */,
+				98474B991E8CD51B00A250FD /* MTTRequest.m */,
+				98474B9B1E8CD52600A250FD /* MTTResponse.h */,
+				98474B9C1E8CD52600A250FD /* MTTResponse.m */,
+				98474BA21E8CDCB800A250FD /* MTTAPIResource.h */,
+				98474BA31E8CDCB800A250FD /* MTTAPIResource.m */,
+				98474BB01E8CE82300A250FD /* MTTNotificationName.h */,
 			);
 			path = APIManager;
 			sourceTree = "<group>";
@@ -79,6 +124,7 @@
 		98474B8D1E8CB94000A250FD /* Functions */ = {
 			isa = PBXGroup;
 			children = (
+				98474BA51E8CDE0A00A250FD /* Models */,
 			);
 			path = Functions;
 			sourceTree = "<group>";
@@ -86,6 +132,17 @@
 		98474B8E1E8CB95000A250FD /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				98474BAC1E8CDF5B00A250FD /* Categories.h */,
+				98474BB71E8CECFD00A250FD /* UIView+Toast.h */,
+				98474BB81E8CECFD00A250FD /* UIView+Toast.m */,
+				98474BA91E8CDF2600A250FD /* NSObject+MTTCategory.h */,
+				98474BAA1E8CDF2600A250FD /* NSObject+MTTCategory.m */,
+				98474BAD1E8CDFD400A250FD /* NSObject+MTTCommonDefine.h */,
+				98474BAE1E8CDFD400A250FD /* NSObject+MTTCommonDefine.m */,
+				98474BB11E8CE8A000A250FD /* UIViewController+MTTExtensions.h */,
+				98474BB21E8CE8A000A250FD /* UIViewController+MTTExtensions.m */,
+				98474BB41E8CE94200A250FD /* UIViewController+MTTHUD.h */,
+				98474BB51E8CE94200A250FD /* UIViewController+MTTHUD.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -95,6 +152,24 @@
 			children = (
 			);
 			path = ThirdLib;
+			sourceTree = "<group>";
+		};
+		98474B9E1E8CD58800A250FD /* HTTPProxy */ = {
+			isa = PBXGroup;
+			children = (
+				98474B9F1E8CD5BC00A250FD /* MTTHttpProxy.h */,
+				98474BA01E8CD5BC00A250FD /* MTTHttpProxy.m */,
+			);
+			path = HTTPProxy;
+			sourceTree = "<group>";
+		};
+		98474BA51E8CDE0A00A250FD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				98474BA61E8CDE1600A250FD /* MTTUSer.h */,
+				98474BA71E8CDE1600A250FD /* MTTUSer.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		9854C9611E8CB389002F66D5 = {
@@ -207,6 +282,7 @@
 		9854C9621E8CB389002F66D5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = MTT;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = lyle;
 				TargetAttributes = {
@@ -301,14 +377,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98474B971E8CD4F600A250FD /* MTTNetworkManager.m in Sources */,
+				98474BAF1E8CDFD400A250FD /* NSObject+MTTCommonDefine.m in Sources */,
+				98474B9A1E8CD51B00A250FD /* MTTRequest.m in Sources */,
 				9854C9751E8CB38A002F66D5 /* ViewController.m in Sources */,
 				9854C9881E8CB63D002F66D5 /* MTTBaseViewController.m in Sources */,
+				98474BA11E8CD5BC00A250FD /* MTTHttpProxy.m in Sources */,
+				98474B9D1E8CD52600A250FD /* MTTResponse.m in Sources */,
+				98474BB91E8CECFD00A250FD /* UIView+Toast.m in Sources */,
 				9854C9721E8CB38A002F66D5 /* AppDelegate.m in Sources */,
 				9854C98E1E8CB666002F66D5 /* MTTTableView.m in Sources */,
+				98474BB31E8CE8A000A250FD /* UIViewController+MTTExtensions.m in Sources */,
 				98474B881E8CB8BA00A250FD /* MTTNavigationViewController.m in Sources */,
+				98474BA41E8CDCB800A250FD /* MTTAPIResource.m in Sources */,
 				98474B8B1E8CB8EB00A250FD /* MTTTabBarController.m in Sources */,
 				9854C98B1E8CB650002F66D5 /* MTTBaseModel.m in Sources */,
+				98474BA81E8CDE1600A250FD /* MTTUSer.m in Sources */,
 				9854C96F1E8CB389002F66D5 /* main.m in Sources */,
+				98474BB61E8CE94200A250FD /* UIViewController+MTTHUD.m in Sources */,
+				98474BAB1E8CDF2600A250FD /* NSObject+MTTCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
