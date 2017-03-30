@@ -22,10 +22,12 @@
 		98474BB61E8CE94200A250FD /* UIViewController+MTTHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 98474BB51E8CE94200A250FD /* UIViewController+MTTHUD.m */; };
 		98474BB91E8CECFD00A250FD /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 98474BB81E8CECFD00A250FD /* UIView+Toast.m */; };
 		98474BBC1E8D060600A250FD /* MTTNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 98474BBB1E8D060600A250FD /* MTTNode.m */; };
+		98474BC11E8D156900A250FD /* MTTHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98474BBF1E8D156900A250FD /* MTTHomeViewController.m */; };
+		98474BC21E8D156900A250FD /* MTTHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98474BC01E8D156900A250FD /* MTTHomeViewController.xib */; };
+		98474BC71E8D1F7B00A250FD /* UIColor+radomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 98474BC41E8D1F7B00A250FD /* UIColor+radomColor.m */; };
+		98474BC81E8D1F7B00A250FD /* UIColor+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 98474BC61E8D1F7B00A250FD /* UIColor+Util.m */; };
 		9854C96F1E8CB389002F66D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9854C96E1E8CB389002F66D5 /* main.m */; };
 		9854C9721E8CB38A002F66D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9854C9711E8CB38A002F66D5 /* AppDelegate.m */; };
-		9854C9751E8CB38A002F66D5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9854C9741E8CB38A002F66D5 /* ViewController.m */; };
-		9854C9781E8CB38A002F66D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9854C9761E8CB38A002F66D5 /* Main.storyboard */; };
 		9854C97A1E8CB38A002F66D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9854C9791E8CB38A002F66D5 /* Assets.xcassets */; };
 		9854C97D1E8CB38A002F66D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9854C97B1E8CB38A002F66D5 /* LaunchScreen.storyboard */; };
 		9854C9881E8CB63D002F66D5 /* MTTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9854C9871E8CB63D002F66D5 /* MTTBaseViewController.m */; };
@@ -69,13 +71,17 @@
 		98474BBA1E8D060600A250FD /* MTTNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTNode.h; sourceTree = "<group>"; };
 		98474BBB1E8D060600A250FD /* MTTNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTNode.m; sourceTree = "<group>"; };
 		98474BBD1E8D07A000A250FD /* APIManagerHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIManagerHeaders.h; sourceTree = "<group>"; };
+		98474BBE1E8D156900A250FD /* MTTHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTHomeViewController.h; sourceTree = "<group>"; };
+		98474BBF1E8D156900A250FD /* MTTHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTHomeViewController.m; sourceTree = "<group>"; };
+		98474BC01E8D156900A250FD /* MTTHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTTHomeViewController.xib; sourceTree = "<group>"; };
+		98474BC31E8D1F7B00A250FD /* UIColor+radomColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+radomColor.h"; sourceTree = "<group>"; };
+		98474BC41E8D1F7B00A250FD /* UIColor+radomColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+radomColor.m"; sourceTree = "<group>"; };
+		98474BC51E8D1F7B00A250FD /* UIColor+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Util.h"; sourceTree = "<group>"; };
+		98474BC61E8D1F7B00A250FD /* UIColor+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Util.m"; sourceTree = "<group>"; };
 		9854C96A1E8CB389002F66D5 /* MTTV2EX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTTV2EX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9854C96E1E8CB389002F66D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9854C9701E8CB38A002F66D5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9854C9711E8CB38A002F66D5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9854C9731E8CB38A002F66D5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9854C9741E8CB38A002F66D5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		9854C9771E8CB38A002F66D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9854C9791E8CB38A002F66D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9854C97C1E8CB38A002F66D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9854C97E1E8CB38A002F66D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -130,6 +136,9 @@
 			isa = PBXGroup;
 			children = (
 				98474BA51E8CDE0A00A250FD /* Models */,
+				98474BBE1E8D156900A250FD /* MTTHomeViewController.h */,
+				98474BBF1E8D156900A250FD /* MTTHomeViewController.m */,
+				98474BC01E8D156900A250FD /* MTTHomeViewController.xib */,
 			);
 			path = Functions;
 			sourceTree = "<group>";
@@ -137,6 +146,10 @@
 		98474B8E1E8CB95000A250FD /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				98474BC31E8D1F7B00A250FD /* UIColor+radomColor.h */,
+				98474BC41E8D1F7B00A250FD /* UIColor+radomColor.m */,
+				98474BC51E8D1F7B00A250FD /* UIColor+Util.h */,
+				98474BC61E8D1F7B00A250FD /* UIColor+Util.m */,
 				98474BAC1E8CDF5B00A250FD /* Categories.h */,
 				98474BB71E8CECFD00A250FD /* UIView+Toast.h */,
 				98474BB81E8CECFD00A250FD /* UIView+Toast.m */,
@@ -204,9 +217,6 @@
 				9854C9841E8CB628002F66D5 /* Classes */,
 				9854C9701E8CB38A002F66D5 /* AppDelegate.h */,
 				9854C9711E8CB38A002F66D5 /* AppDelegate.m */,
-				9854C9731E8CB38A002F66D5 /* ViewController.h */,
-				9854C9741E8CB38A002F66D5 /* ViewController.m */,
-				9854C9761E8CB38A002F66D5 /* Main.storyboard */,
 				9854C9791E8CB38A002F66D5 /* Assets.xcassets */,
 				9854C97B1E8CB38A002F66D5 /* LaunchScreen.storyboard */,
 				9854C97E1E8CB38A002F66D5 /* Info.plist */,
@@ -323,9 +333,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98474BC21E8D156900A250FD /* MTTHomeViewController.xib in Resources */,
 				9854C97D1E8CB38A002F66D5 /* LaunchScreen.storyboard in Resources */,
 				9854C97A1E8CB38A002F66D5 /* Assets.xcassets in Resources */,
-				9854C9781E8CB38A002F66D5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,7 +397,6 @@
 				98474B971E8CD4F600A250FD /* MTTNetworkManager.m in Sources */,
 				98474BAF1E8CDFD400A250FD /* NSObject+MTTCommonDefine.m in Sources */,
 				98474B9A1E8CD51B00A250FD /* MTTRequest.m in Sources */,
-				9854C9751E8CB38A002F66D5 /* ViewController.m in Sources */,
 				9854C9881E8CB63D002F66D5 /* MTTBaseViewController.m in Sources */,
 				98474BA11E8CD5BC00A250FD /* MTTHttpProxy.m in Sources */,
 				98474B9D1E8CD52600A250FD /* MTTResponse.m in Sources */,
@@ -396,12 +405,15 @@
 				9854C9721E8CB38A002F66D5 /* AppDelegate.m in Sources */,
 				9854C98E1E8CB666002F66D5 /* MTTTableView.m in Sources */,
 				98474BB31E8CE8A000A250FD /* UIViewController+MTTExtensions.m in Sources */,
+				98474BC11E8D156900A250FD /* MTTHomeViewController.m in Sources */,
 				98474B881E8CB8BA00A250FD /* MTTNavigationViewController.m in Sources */,
 				98474BA41E8CDCB800A250FD /* MTTAPIResource.m in Sources */,
+				98474BC71E8D1F7B00A250FD /* UIColor+radomColor.m in Sources */,
 				98474B8B1E8CB8EB00A250FD /* MTTTabBarController.m in Sources */,
 				9854C98B1E8CB650002F66D5 /* MTTBaseModel.m in Sources */,
 				98474BA81E8CDE1600A250FD /* MTTUSer.m in Sources */,
 				9854C96F1E8CB389002F66D5 /* main.m in Sources */,
+				98474BC81E8D1F7B00A250FD /* UIColor+Util.m in Sources */,
 				98474BB61E8CE94200A250FD /* UIViewController+MTTHUD.m in Sources */,
 				98474BAB1E8CDF2600A250FD /* NSObject+MTTCategory.m in Sources */,
 			);
@@ -410,14 +422,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9854C9761E8CB38A002F66D5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9854C9771E8CB38A002F66D5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9854C97B1E8CB38A002F66D5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -12,4 +12,6 @@
 #import "NSObject+MTTCommonDefine.h"
 #import "UIViewController+MTTExtensions.h"
 #import "UIViewController+MTTHUD.h"
+#import "UIColor+radomColor.h"
+#import "UIColor+Util.h"
 #endif /* Categories_h */
