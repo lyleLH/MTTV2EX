@@ -73,14 +73,13 @@ static NSString *kDefaultErrorTips = @"网络异常，请检查网络是否正�
     __block NSURLSessionDataTask *task = [manager dataTaskWithRequest:urlRequest completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
         if (responseBlock) {
 
-            MTTLog(@"%@---\n %@ \n %@\n %@\n %@\n ",
+            MTTLog(@"\n---%@---\n---%@---\n---%@---\n%@\n%@\n ",
                    apiMethod,
                    error?@"Error":@"Success",
                    URLString,
                    [param mtt_description],
                    error ? error:[responseObject mtt_description]
                    );
-            
             MTTResponse *response = nil;
             if (error) {
                 response = [[MTTResponse alloc] init];

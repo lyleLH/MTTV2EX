@@ -21,6 +21,7 @@
     [MTTNode allNode:^(NSArray *result) {
         [self mtt_hideHUD];
     }];
+    MTTLog(@"test");
 }
 
 

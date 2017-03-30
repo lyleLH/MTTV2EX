@@ -32,7 +32,7 @@ void ExtendNSLog (const char *file, int lineNumber, const char *functionName, NS
     va_end (ap);
     
     NSString *fileName = [[NSString stringWithUTF8String:file] lastPathComponent];
-    fprintf(stderr, "(%s) (%s:%d) %s",
+    fprintf(stderr, "---Log---(%s)---(%s:%d)---%s",
             functionName, [fileName UTF8String],
             lineNumber, [body UTF8String]);
 }
