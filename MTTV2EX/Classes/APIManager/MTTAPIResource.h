@@ -15,6 +15,7 @@ typedef NS_ENUM(NSUInteger, MTRequestHTTPStatus){
 
 typedef NS_ENUM(NSUInteger, MTTRestfulAPIMethod) {
     kAPIMethod_Login = 0,
+    kAPIMethod_AllNode = 1,
 };
 
 

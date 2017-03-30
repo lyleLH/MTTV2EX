@@ -7,6 +7,7 @@
 //
 
 #import "MTTAPIResource.h"
+static NSString * baseURL  = @"https://www.v2ex.com";
 
 @implementation MTTAPIResource
 
@@ -15,6 +16,10 @@
         case kAPIMethod_Login:
             return @"";
             break;
+        case kAPIMethod_AllNode:
+            return  [baseURL stringByAppendingString:@"/api/nodes/all.json"];
+            break;
+            
         default:
             break;
     }

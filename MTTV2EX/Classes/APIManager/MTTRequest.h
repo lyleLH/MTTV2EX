@@ -13,6 +13,11 @@ typedef NS_ENUM(NSUInteger, MTTHTTPMethod) {
     MTTHTTPMethodPost = 1,
 };
 
+typedef NS_ENUM(NSUInteger, MTTResponseType) {
+    MTTResponseTypeList = 0,
+    MTTResponseTypeMap = 1,
+};
+
 
 
 @interface MTTRequest : MTTBaseModel
@@ -20,7 +25,7 @@ typedef NS_ENUM(NSUInteger, MTTHTTPMethod) {
 @property (nonatomic, assign) MTTRestfulAPIMethod apiMethod;
 
 @property (nonatomic, assign) MTTHTTPMethod HTTPMethod;
-
+@property (nonatomic, assign) MTTResponseType responseType;
 /**
  <#Description#>
  */
@@ -32,5 +37,17 @@ typedef NS_ENUM(NSUInteger, MTTHTTPMethod) {
 @property (nonatomic, copy) NSString *urlString;
 
 @property (nonatomic, copy) NSString *showTips;
+
+@property (nonatomic, copy) NSString * className;
+
+- (instancetype)initWithClassMethod:(MTTRestfulAPIMethod)apiMethod
+                         parameters:(NSDictionary *)parameters
+                          className:(NSString *)className
+                         HTTPMethod:(MTTHTTPMethod)HTTPMethod
+                       responseType:(MTTResponseType)type;
+
+
+
+
 
 @end

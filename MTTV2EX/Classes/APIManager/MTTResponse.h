@@ -8,6 +8,11 @@
 
 #import "MTTBaseModel.h"
 #import "MTTAPIResource.h"
+typedef NS_ENUM(NSUInteger, KPResponseType) {
+    MTTResponseObject = 0,
+    MTTResponseArray = 1,
+};
+
 @class MTTRequest;
 
 @class MTTResponse;
@@ -16,6 +21,7 @@ typedef void (^MTTResponseFinishedBlock)(MTTResponse *response, BOOLBlock finish
 
 
 @interface MTTResponse : MTTBaseModel
+
 @property (assign, nonatomic) NSInteger code;
 
 @property (copy, nonatomic) NSString *message;

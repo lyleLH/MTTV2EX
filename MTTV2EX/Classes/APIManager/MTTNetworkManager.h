@@ -8,13 +8,26 @@
 
 #import "MTTBaseModel.h"
 #import "MTTResponse.h"
-@class MTTRequest;
+#import "MTTRequest.h"
 @class MTTHttpProxy;
 
 @interface MTTNetworkManager : MTTBaseModel
 + (MTTNetworkManager *)sharedManager;
-- (void)request:(MTTRequest *)request
-  responseBlock:(MTTResponseBlock)responseBlock;
+
+- (void)request:(MTTRequest *)request responseBlock:(MTTResponseBlock)responseBlock;
+
+- (void)requestWithClassMethod:(MTTRestfulAPIMethod)classMethod
+                    parameters:(NSDictionary *)parameters
+                     className:(NSString *)className
+                    HTTPMethod:(MTTHTTPMethod)HTTPMethod
+                 responseBlock:(MTTResponseBlock)responseBlock
+                  responseType:(MTTResponseType)type;
+
+- (void)requestWithClassMethod:(MTTRestfulAPIMethod)classMethod
+                    parameters:(NSDictionary *)parameters
+                     className:(NSString *)className
+                 responseBlock:(MTTResponseBlock)responseBlock;
+
 
 + (void)cancelOperationsWithClass:(id)Class;
 

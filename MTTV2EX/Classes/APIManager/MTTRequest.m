@@ -23,11 +23,13 @@
                          parameters:(NSDictionary *)parameters
                           className:(NSString *)className
                          HTTPMethod:(MTTHTTPMethod)HTTPMethod
-                              files:(NSArray *)files{
+                       responseType:(MTTResponseType)type{
     if (self = [self init]) {
         _apiMethod = apiMethod;
         _parameters = parameters;
         _HTTPMethod = HTTPMethod;
+        _responseType = type;
+        _className = className;
     }
     return self;
 }

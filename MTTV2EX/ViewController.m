@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "MTTNode.h"
 @interface ViewController ()
 
 @end
@@ -17,6 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [self mtt_showHUD];
+    [MTTNode allNode:^(NSArray *result) {
+        [self mtt_hideHUD];
+    }];
 }
 
 

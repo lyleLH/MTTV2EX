@@ -34,6 +34,21 @@ static NSString *kDefaultErrorTips = @"网络异常，请检查网络是否正�
     return sharedInstance;
 }
 
+- (void)requestWithClassMethod:(MTTRestfulAPIMethod)classMethod
+                    parameters:(NSDictionary *)parameters
+                     className:(NSString *)className
+                 responseBlock:(MTTResponseBlock)responseBlock {
+    
+    return [self requestWithClassMethod:classMethod parameters:parameters className:className HTTPMethod:MTTHTTPMethodGet responseBlock:responseBlock responseType:MTTResponseTypeList];
+    
+}
+- (void)requestWithClassMethod:(MTTRestfulAPIMethod)classMethod parameters:(NSDictionary *)parameters className:(NSString *)className  HTTPMethod:(MTTHTTPMethod)HTTPMethod responseBlock:(MTTResponseBlock)responseBlock  responseType:(MTTResponseType)type {
+    MTTRequest *request = [[MTTRequest alloc] initWithClassMethod:classMethod parameters:parameters className:className HTTPMethod:HTTPMethod responseType:type];
+    
+    [self request:request responseBlock:responseBlock];
+}
+
+
 
 - (void)request:(MTTRequest *)request
   responseBlock:(MTTResponseBlock)responseBlock{
@@ -50,26 +65,21 @@ static NSString *kDefaultErrorTips = @"网络异常，请检查网络是否正�
     [manager.requestSerializer willChangeValueForKey:@"timeoutInterval"];
     manager.requestSerializer.timeoutInterval = kTimeoutInterval;
     [manager.requestSerializer didChangeValueForKey:@"timeoutInterval"];
-    [manager.requestSerializer setValue:@"KuParts-Web-API" forHTTPHeaderField:@"X-Message-Sender"];
-    
-    if([[MTTUSer shareInstance] isLoggedIn]) {
-        NSString *authorization = [NSString stringWithFormat:@"Basic %@",[MTTUSer shareInstance].Authorization];
-        [manager.requestSerializer setValue:authorization forHTTPHeaderField:@"Authorization"];
-    }
-    
-    [manager.requestSerializer setValue:[self mtt_bundleVersion] forHTTPHeaderField:@"AppVersion"];
-    [manager.requestSerializer setValue:@"2" forHTTPHeaderField:@"PlatformType"];
-    
+
     manager.requestSerializer.stringEncoding = NSUTF8StringEncoding;
     __block NSMutableDictionary *param = [[NSMutableDictionary  alloc] initWithDictionary:request.parameters];
-    [param setValue:@"0" forKey:@"FromApp"];
-    
     __block NSMutableURLRequest *urlRequest = [manager.requestSerializer requestWithMethod:apiMethod URLString:[[NSURL URLWithString:URLString relativeToURL:manager.baseURL] absoluteString] parameters:param error:nil];
     
     __block NSURLSessionDataTask *task = [manager dataTaskWithRequest:urlRequest completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
         if (responseBlock) {
 
-//            MTTLog(@"\n %@ \n %@\n %@\n %@\n ",apiMethod, &error? @"Error" : @"Success", URLString, [param mtt_description],error ? error : [responseObject mtt_description]);
+            MTTLog(@"%@---\n %@ \n %@\n %@\n %@\n ",
+                   apiMethod,
+                   error?@"Error":@"Success",
+                   URLString,
+                   [param mtt_description],
+                   error ? error:[responseObject mtt_description]
+                   );
             
             MTTResponse *response = nil;
             if (error) {
@@ -80,6 +90,7 @@ static NSString *kDefaultErrorTips = @"网络异常，请检查网络是否正�
             }else{
                 response = [[MTTResponse alloc] initWithResult:responseObject request:request];
             }
+            
             
             if ([response isLogout]) {
                 [[NSNotificationCenter defaultCenter] postNotificationName:KPLandingAnomaly object:nil];

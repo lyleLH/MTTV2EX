@@ -9,9 +9,9 @@
 #import <Foundation/Foundation.h>
 
 #ifdef DEBUG
-#define NSLog(args...) MTTLog(__FILE__,__LINE__,__PRETTY_FUNCTION__,args);
+#define MTTLog(args...) ExtendNSLog(__FILE__,__LINE__,__PRETTY_FUNCTION__,args);
 #else
-#define NSLog(x...)
+#define MTTLog(x...)
 #endif
 
 /**
@@ -23,7 +23,7 @@
  @param format <#format description#>
  @param ... <#... description#>
  */
-void MTTLog(const char *file, int lineNumber, const char *functionName, NSString *format, ...);
+void ExtendNSLog(const char *file, int lineNumber, const char *functionName, NSString *format, ...);
 
 
 @interface NSObject (MTTCommonDefine)

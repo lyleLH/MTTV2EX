@@ -21,6 +21,7 @@
 		98474BB31E8CE8A000A250FD /* UIViewController+MTTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 98474BB21E8CE8A000A250FD /* UIViewController+MTTExtensions.m */; };
 		98474BB61E8CE94200A250FD /* UIViewController+MTTHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 98474BB51E8CE94200A250FD /* UIViewController+MTTHUD.m */; };
 		98474BB91E8CECFD00A250FD /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 98474BB81E8CECFD00A250FD /* UIView+Toast.m */; };
+		98474BBC1E8D060600A250FD /* MTTNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 98474BBB1E8D060600A250FD /* MTTNode.m */; };
 		9854C96F1E8CB389002F66D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9854C96E1E8CB389002F66D5 /* main.m */; };
 		9854C9721E8CB38A002F66D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9854C9711E8CB38A002F66D5 /* AppDelegate.m */; };
 		9854C9751E8CB38A002F66D5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9854C9741E8CB38A002F66D5 /* ViewController.m */; };
@@ -65,6 +66,9 @@
 		98474BB51E8CE94200A250FD /* UIViewController+MTTHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MTTHUD.m"; sourceTree = "<group>"; };
 		98474BB71E8CECFD00A250FD /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
 		98474BB81E8CECFD00A250FD /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		98474BBA1E8D060600A250FD /* MTTNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTNode.h; sourceTree = "<group>"; };
+		98474BBB1E8D060600A250FD /* MTTNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTNode.m; sourceTree = "<group>"; };
+		98474BBD1E8D07A000A250FD /* APIManagerHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIManagerHeaders.h; sourceTree = "<group>"; };
 		9854C96A1E8CB389002F66D5 /* MTTV2EX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTTV2EX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9854C96E1E8CB389002F66D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9854C9701E8CB38A002F66D5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -117,6 +121,7 @@
 				98474BA21E8CDCB800A250FD /* MTTAPIResource.h */,
 				98474BA31E8CDCB800A250FD /* MTTAPIResource.m */,
 				98474BB01E8CE82300A250FD /* MTTNotificationName.h */,
+				98474BBD1E8D07A000A250FD /* APIManagerHeaders.h */,
 			);
 			path = APIManager;
 			sourceTree = "<group>";
@@ -168,6 +173,8 @@
 			children = (
 				98474BA61E8CDE1600A250FD /* MTTUSer.h */,
 				98474BA71E8CDE1600A250FD /* MTTUSer.m */,
+				98474BBA1E8D060600A250FD /* MTTNode.h */,
+				98474BBB1E8D060600A250FD /* MTTNode.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -384,6 +391,7 @@
 				9854C9881E8CB63D002F66D5 /* MTTBaseViewController.m in Sources */,
 				98474BA11E8CD5BC00A250FD /* MTTHttpProxy.m in Sources */,
 				98474B9D1E8CD52600A250FD /* MTTResponse.m in Sources */,
+				98474BBC1E8D060600A250FD /* MTTNode.m in Sources */,
 				98474BB91E8CECFD00A250FD /* UIView+Toast.m in Sources */,
 				9854C9721E8CB38A002F66D5 /* AppDelegate.m in Sources */,
 				9854C98E1E8CB666002F66D5 /* MTTTableView.m in Sources */,

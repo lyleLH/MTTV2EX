@@ -7,5 +7,6 @@ target 'MTTV2EX' do
   # Pods for MTTV2EX
   pod 'AFNetworking', '~> 3.1.0'
   pod 'MBProgressHUD', '~> 1.0.0'
+   pod 'MJExtension', '~> 3.0.13'
    pod 'YYKit', '~> 1.0.9'
 end

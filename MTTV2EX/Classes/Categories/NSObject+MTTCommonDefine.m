@@ -10,7 +10,7 @@
 
 @implementation NSObject (MTTCommonDefine)
 
-void MTTLog(const char *file, int lineNumber, const char *functionName, NSString *format, ...)
+void ExtendNSLog (const char *file, int lineNumber, const char *functionName, NSString *format, ...)
 {
     // Type to hold information about variable arguments.
     va_list ap;
