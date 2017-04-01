@@ -29,7 +29,7 @@
     // Do any additional setup after loading the view.
 
     [self addChildViewController:[[MTTHomeViewController alloc] init] andSetUpTabbarOfViewControllerWithTitle:@"首页" andImage:@"tabbar_home" annSelectedImage:@"tabbar_home_selected" withNavgationContoller:YES];
-     [self addChildViewController:[[MTTHomeViewController alloc] init] andSetUpTabbarOfViewControllerWithTitle:@"首页" andImage:@"tabbar_news" annSelectedImage:@"tabbar_news_selected" withNavgationContoller:YES];
+//     [self addChildViewController:[[MTTHomeViewController alloc] init] andSetUpTabbarOfViewControllerWithTitle:@"首页" andImage:@"tabbar_news" annSelectedImage:@"tabbar_news_selected" withNavgationContoller:YES];
      [self addChildViewController:[[MTTHomeViewController alloc] init] andSetUpTabbarOfViewControllerWithTitle:@"首页" andImage:@"tabbar_order" annSelectedImage:@"tabbar_order_selected" withNavgationContoller:YES];
      [self addChildViewController:[[MTTHomeViewController alloc] init] andSetUpTabbarOfViewControllerWithTitle:@"首页" andImage:@"tabbar_me" annSelectedImage:@"tabbar_me_selected" withNavgationContoller:YES];
 }
