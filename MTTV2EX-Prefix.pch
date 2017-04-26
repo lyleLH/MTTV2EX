@@ -9,4 +9,5 @@
 #import "Categories.h"
 #import "MTTNotificationName.h"
 #import "APIManagerHeaders.h"
+#import "CommonDefine.h"
 #endif

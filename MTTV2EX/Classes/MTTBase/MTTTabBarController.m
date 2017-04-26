@@ -7,12 +7,13 @@
 //
 
 #import "MTTTabBarController.h"
-#import "MTTHomeViewController.h"
+#import "MTTTopicViewController.h"
 #import "MTTNodeViewController.h"
 #import "MTTMessageViewController.h"
 #import "MTTAboutMeViewController.h"
 
 #import "MTTNavigationViewController.h"
+#import "RKSwipeBetweenViewControllers.h"
 @interface MTTTabBarController ()<UITabBarControllerDelegate>
 
 @end
@@ -32,9 +33,16 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
-    [self addChildViewController:[[MTTHomeViewController alloc] init] andSetUpTabbarOfViewControllerWithTitle:nil andImage:@"tabbar_home" annSelectedImage:@"tabbar_home_selected" withNavgationContoller:YES];
-     [self addChildViewController:[[MTTNodeViewController alloc] init] andSetUpTabbarOfViewControllerWithTitle:nil andImage:@"tabbar_news" annSelectedImage:@"tabbar_news_selected" withNavgationContoller:YES];
-     [self addChildViewController:[[MTTMessageViewController alloc] init] andSetUpTabbarOfViewControllerWithTitle:nil andImage:@"tabbar_order" annSelectedImage:@"tabbar_order_selected" withNavgationContoller:YES];
+    RKSwipeBetweenViewControllers *nav_tweet = [RKSwipeBetweenViewControllers newSwipeBetweenViewControllers];
+    [nav_tweet.viewControllerArray addObjectsFromArray:@[[[MTTTopicViewController alloc] init],
+                                                         [[MTTTopicViewController alloc] init],
+                                                         [[MTTTopicViewController alloc] init],
+                                                         [[MTTTopicViewController alloc] init]]];
+    nav_tweet.buttonText = @[@"最热", @"最新", @"关注",@"收藏"];
+
+    [self addChildViewController:nav_tweet andSetUpTabbarOfViewControllerWithTitle:nil andImage:@"tabbar_home" annSelectedImage:@"tabbar_home_selected" withNavgationContoller:NO];
+     [self addChildViewController:[[MTTNodeViewController alloc] init] andSetUpTabbarOfViewControllerWithTitle:nil andImage:@"tabbar_order" annSelectedImage:@"tabbar_order_selected" withNavgationContoller:YES];
+     [self addChildViewController:[[MTTMessageViewController alloc] init] andSetUpTabbarOfViewControllerWithTitle:nil andImage:@"tabbar_news" annSelectedImage:@"tabbar_news_selected" withNavgationContoller:YES];
      [self addChildViewController:[[MTTAboutMeViewController alloc] init] andSetUpTabbarOfViewControllerWithTitle:nil andImage:@"tabbar_me" annSelectedImage:@"tabbar_me_selected" withNavgationContoller:YES];
     
 }

@@ -6,13 +6,13 @@
 //  Copyright © 2017年 lyle. All rights reserved.
 //
 
-#import "MTTHomeViewController.h"
+#import "MTTTopicViewController.h"
 
-@interface MTTHomeViewController ()
+@interface MTTTopicViewController ()
 
 @end
 
-@implementation MTTHomeViewController
+@implementation MTTTopicViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

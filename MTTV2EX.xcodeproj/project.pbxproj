@@ -24,16 +24,20 @@
 		98474BBC1E8D060600A250FD /* MTTNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 98474BBB1E8D060600A250FD /* MTTNode.m */; };
 		98474BC71E8D1F7B00A250FD /* UIColor+radomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 98474BC41E8D1F7B00A250FD /* UIColor+radomColor.m */; };
 		98474BC81E8D1F7B00A250FD /* UIColor+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 98474BC61E8D1F7B00A250FD /* UIColor+Util.m */; };
-		984E27311EB039F400BB5621 /* MTTHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 984E272F1EB039F400BB5621 /* MTTHomeViewController.m */; };
-		984E27321EB039F400BB5621 /* MTTHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 984E27301EB039F400BB5621 /* MTTHomeViewController.xib */; };
-		984E27661EB04B3E00BB5621 /* FDSlideBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 984E27631EB04B3E00BB5621 /* FDSlideBar.m */; };
-		984E27671EB04B3E00BB5621 /* FDSlideBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 984E27651EB04B3E00BB5621 /* FDSlideBarItem.m */; };
+		984E27311EB039F400BB5621 /* MTTTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 984E272F1EB039F400BB5621 /* MTTTopicViewController.m */; };
 		984E279A1EB051EE00BB5621 /* MTTNodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 984E27981EB051EE00BB5621 /* MTTNodeViewController.m */; };
 		984E279B1EB051EE00BB5621 /* MTTNodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 984E27991EB051EE00BB5621 /* MTTNodeViewController.xib */; };
 		984E279F1EB051FB00BB5621 /* MTTMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 984E279D1EB051FB00BB5621 /* MTTMessageViewController.m */; };
 		984E27A01EB051FB00BB5621 /* MTTMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 984E279E1EB051FB00BB5621 /* MTTMessageViewController.xib */; };
 		984E27A41EB0521800BB5621 /* MTTAboutMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 984E27A21EB0521800BB5621 /* MTTAboutMeViewController.m */; };
 		984E27A51EB0521800BB5621 /* MTTAboutMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 984E27A31EB0521800BB5621 /* MTTAboutMeViewController.xib */; };
+		984E27AA1EB06C5300BB5621 /* MTTTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 984E27A81EB06C5300BB5621 /* MTTTopicCell.m */; };
+		984E27AB1EB06C5300BB5621 /* MTTTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 984E27A91EB06C5300BB5621 /* MTTTopicCell.xib */; };
+		984E27B61EB075CA00BB5621 /* EasePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 984E27B11EB075CA00BB5621 /* EasePageViewController.m */; };
+		984E27B71EB075CA00BB5621 /* RKSwipeBetweenViewControllers.m in Sources */ = {isa = PBXBuildFile; fileRef = 984E27B31EB075CA00BB5621 /* RKSwipeBetweenViewControllers.m */; };
+		984E27B81EB075CA00BB5621 /* SMPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 984E27B51EB075CA00BB5621 /* SMPageControl.m */; };
+		984E27BB1EB078AC00BB5621 /* nav_page_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 984E27B91EB078AC00BB5621 /* nav_page_selected@2x.png */; };
+		984E27BC1EB078AC00BB5621 /* nav_page_unselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 984E27BA1EB078AC00BB5621 /* nav_page_unselected@2x.png */; };
 		9854C96F1E8CB389002F66D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9854C96E1E8CB389002F66D5 /* main.m */; };
 		9854C9721E8CB38A002F66D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9854C9711E8CB38A002F66D5 /* AppDelegate.m */; };
 		9854C97A1E8CB38A002F66D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9854C9791E8CB38A002F66D5 /* Assets.xcassets */; };
@@ -83,13 +87,8 @@
 		98474BC41E8D1F7B00A250FD /* UIColor+radomColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+radomColor.m"; sourceTree = "<group>"; };
 		98474BC51E8D1F7B00A250FD /* UIColor+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Util.h"; sourceTree = "<group>"; };
 		98474BC61E8D1F7B00A250FD /* UIColor+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Util.m"; sourceTree = "<group>"; };
-		984E272E1EB039F400BB5621 /* MTTHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTHomeViewController.h; sourceTree = "<group>"; };
-		984E272F1EB039F400BB5621 /* MTTHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTHomeViewController.m; sourceTree = "<group>"; };
-		984E27301EB039F400BB5621 /* MTTHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTTHomeViewController.xib; sourceTree = "<group>"; };
-		984E27621EB04B3E00BB5621 /* FDSlideBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDSlideBar.h; sourceTree = "<group>"; };
-		984E27631EB04B3E00BB5621 /* FDSlideBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDSlideBar.m; sourceTree = "<group>"; };
-		984E27641EB04B3E00BB5621 /* FDSlideBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDSlideBarItem.h; sourceTree = "<group>"; };
-		984E27651EB04B3E00BB5621 /* FDSlideBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDSlideBarItem.m; sourceTree = "<group>"; };
+		984E272E1EB039F400BB5621 /* MTTTopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTTopicViewController.h; sourceTree = "<group>"; };
+		984E272F1EB039F400BB5621 /* MTTTopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTTopicViewController.m; sourceTree = "<group>"; };
 		984E27971EB051EE00BB5621 /* MTTNodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTNodeViewController.h; sourceTree = "<group>"; };
 		984E27981EB051EE00BB5621 /* MTTNodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTNodeViewController.m; sourceTree = "<group>"; };
 		984E27991EB051EE00BB5621 /* MTTNodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTTNodeViewController.xib; sourceTree = "<group>"; };
@@ -99,6 +98,18 @@
 		984E27A11EB0521800BB5621 /* MTTAboutMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTAboutMeViewController.h; sourceTree = "<group>"; };
 		984E27A21EB0521800BB5621 /* MTTAboutMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTAboutMeViewController.m; sourceTree = "<group>"; };
 		984E27A31EB0521800BB5621 /* MTTAboutMeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTTAboutMeViewController.xib; sourceTree = "<group>"; };
+		984E27A61EB06B4A00BB5621 /* CommonDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDefine.h; sourceTree = "<group>"; };
+		984E27A71EB06C5300BB5621 /* MTTTopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTTopicCell.h; sourceTree = "<group>"; };
+		984E27A81EB06C5300BB5621 /* MTTTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTTopicCell.m; sourceTree = "<group>"; };
+		984E27A91EB06C5300BB5621 /* MTTTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTTTopicCell.xib; sourceTree = "<group>"; };
+		984E27B01EB075CA00BB5621 /* EasePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasePageViewController.h; sourceTree = "<group>"; };
+		984E27B11EB075CA00BB5621 /* EasePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasePageViewController.m; sourceTree = "<group>"; };
+		984E27B21EB075CA00BB5621 /* RKSwipeBetweenViewControllers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKSwipeBetweenViewControllers.h; sourceTree = "<group>"; };
+		984E27B31EB075CA00BB5621 /* RKSwipeBetweenViewControllers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKSwipeBetweenViewControllers.m; sourceTree = "<group>"; };
+		984E27B41EB075CA00BB5621 /* SMPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMPageControl.h; sourceTree = "<group>"; };
+		984E27B51EB075CA00BB5621 /* SMPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMPageControl.m; sourceTree = "<group>"; };
+		984E27B91EB078AC00BB5621 /* nav_page_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_page_selected@2x.png"; sourceTree = "<group>"; };
+		984E27BA1EB078AC00BB5621 /* nav_page_unselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_page_unselected@2x.png"; sourceTree = "<group>"; };
 		9854C96A1E8CB389002F66D5 /* MTTV2EX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTTV2EX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9854C96E1E8CB389002F66D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9854C9701E8CB38A002F66D5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -188,7 +199,7 @@
 		98474B8F1E8CB96A00A250FD /* ThirdLib */ = {
 			isa = PBXGroup;
 			children = (
-				984E27611EB04B3E00BB5621 /* FDSlideBar */,
+				984E27AF1EB075CA00BB5621 /* PageViewController */,
 			);
 			path = ThirdLib;
 			sourceTree = "<group>";
@@ -216,9 +227,8 @@
 		984E272D1EB039F400BB5621 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				984E272E1EB039F400BB5621 /* MTTHomeViewController.h */,
-				984E272F1EB039F400BB5621 /* MTTHomeViewController.m */,
-				984E27301EB039F400BB5621 /* MTTHomeViewController.xib */,
+				984E272E1EB039F400BB5621 /* MTTTopicViewController.h */,
+				984E272F1EB039F400BB5621 /* MTTTopicViewController.m */,
 				984E27971EB051EE00BB5621 /* MTTNodeViewController.h */,
 				984E27981EB051EE00BB5621 /* MTTNodeViewController.m */,
 				984E27991EB051EE00BB5621 /* MTTNodeViewController.xib */,
@@ -235,6 +245,9 @@
 		984E27331EB03A0D00BB5621 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				984E27A71EB06C5300BB5621 /* MTTTopicCell.h */,
+				984E27A81EB06C5300BB5621 /* MTTTopicCell.m */,
+				984E27A91EB06C5300BB5621 /* MTTTopicCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -242,19 +255,24 @@
 		984E27341EB03A2B00BB5621 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				984E27A61EB06B4A00BB5621 /* CommonDefine.h */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		984E27611EB04B3E00BB5621 /* FDSlideBar */ = {
+		984E27AF1EB075CA00BB5621 /* PageViewController */ = {
 			isa = PBXGroup;
 			children = (
-				984E27621EB04B3E00BB5621 /* FDSlideBar.h */,
-				984E27631EB04B3E00BB5621 /* FDSlideBar.m */,
-				984E27641EB04B3E00BB5621 /* FDSlideBarItem.h */,
-				984E27651EB04B3E00BB5621 /* FDSlideBarItem.m */,
+				984E27B91EB078AC00BB5621 /* nav_page_selected@2x.png */,
+				984E27BA1EB078AC00BB5621 /* nav_page_unselected@2x.png */,
+				984E27B01EB075CA00BB5621 /* EasePageViewController.h */,
+				984E27B11EB075CA00BB5621 /* EasePageViewController.m */,
+				984E27B21EB075CA00BB5621 /* RKSwipeBetweenViewControllers.h */,
+				984E27B31EB075CA00BB5621 /* RKSwipeBetweenViewControllers.m */,
+				984E27B41EB075CA00BB5621 /* SMPageControl.h */,
+				984E27B51EB075CA00BB5621 /* SMPageControl.m */,
 			);
-			path = FDSlideBar;
+			path = PageViewController;
 			sourceTree = "<group>";
 		};
 		9854C9611E8CB389002F66D5 = {
@@ -402,9 +420,11 @@
 				984E27A01EB051FB00BB5621 /* MTTMessageViewController.xib in Resources */,
 				9854C97D1E8CB38A002F66D5 /* LaunchScreen.storyboard in Resources */,
 				9854C97A1E8CB38A002F66D5 /* Assets.xcassets in Resources */,
-				984E27321EB039F400BB5621 /* MTTHomeViewController.xib in Resources */,
+				984E27BC1EB078AC00BB5621 /* nav_page_unselected@2x.png in Resources */,
+				984E27BB1EB078AC00BB5621 /* nav_page_selected@2x.png in Resources */,
 				984E27A51EB0521800BB5621 /* MTTAboutMeViewController.xib in Resources */,
 				984E279B1EB051EE00BB5621 /* MTTNodeViewController.xib in Resources */,
+				984E27AB1EB06C5300BB5621 /* MTTTopicCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,25 +491,27 @@
 				98474B9D1E8CD52600A250FD /* MTTResponse.m in Sources */,
 				98474BBC1E8D060600A250FD /* MTTNode.m in Sources */,
 				98474BB91E8CECFD00A250FD /* UIView+Toast.m in Sources */,
+				984E27B81EB075CA00BB5621 /* SMPageControl.m in Sources */,
 				9854C9721E8CB38A002F66D5 /* AppDelegate.m in Sources */,
 				9854C98E1E8CB666002F66D5 /* MTTTableView.m in Sources */,
 				98474BB31E8CE8A000A250FD /* UIViewController+MTTExtensions.m in Sources */,
 				984E279F1EB051FB00BB5621 /* MTTMessageViewController.m in Sources */,
 				98474B881E8CB8BA00A250FD /* MTTNavigationViewController.m in Sources */,
 				98474BA41E8CDCB800A250FD /* MTTAPIResource.m in Sources */,
+				984E27B71EB075CA00BB5621 /* RKSwipeBetweenViewControllers.m in Sources */,
 				98474BC71E8D1F7B00A250FD /* UIColor+radomColor.m in Sources */,
 				98474B8B1E8CB8EB00A250FD /* MTTTabBarController.m in Sources */,
-				984E27661EB04B3E00BB5621 /* FDSlideBar.m in Sources */,
+				984E27AA1EB06C5300BB5621 /* MTTTopicCell.m in Sources */,
 				984E279A1EB051EE00BB5621 /* MTTNodeViewController.m in Sources */,
-				984E27311EB039F400BB5621 /* MTTHomeViewController.m in Sources */,
+				984E27311EB039F400BB5621 /* MTTTopicViewController.m in Sources */,
 				9854C98B1E8CB650002F66D5 /* MTTBaseModel.m in Sources */,
-				984E27671EB04B3E00BB5621 /* FDSlideBarItem.m in Sources */,
 				98474BA81E8CDE1600A250FD /* MTTUSer.m in Sources */,
 				9854C96F1E8CB389002F66D5 /* main.m in Sources */,
 				98474BC81E8D1F7B00A250FD /* UIColor+Util.m in Sources */,
 				984E27A41EB0521800BB5621 /* MTTAboutMeViewController.m in Sources */,
 				98474BB61E8CE94200A250FD /* UIViewController+MTTHUD.m in Sources */,
 				98474BAB1E8CDF2600A250FD /* NSObject+MTTCategory.m in Sources */,
+				984E27B61EB075CA00BB5621 /* EasePageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

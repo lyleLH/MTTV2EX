@@ -14,6 +14,18 @@
 
 @implementation MTTNavigationViewController
 
+
++ (void)initialize {
+    UINavigationBar * naviBar = [UINavigationBar appearance] ;
+    [naviBar setBarTintColor: [UIColor whiteColor]];
+    [naviBar setTintColor:[UIColor whiteColor]];
+    
+    [naviBar setTitleTextAttributes:@{NSForegroundColorAttributeName: UIColorFromRGB(0x333333),NSFontAttributeName:[UIFont systemFontOfSize:18]}];
+    
+    
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.

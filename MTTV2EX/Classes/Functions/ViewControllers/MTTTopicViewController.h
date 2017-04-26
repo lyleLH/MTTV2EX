@@ -8,6 +8,6 @@
 
 #import "MTTBaseViewController.h"
 
-@interface MTTHomeViewController : MTTBaseViewController
+@interface MTTTopicViewController : MTTBaseViewController
 
 @end
