@@ -1,23 +1,23 @@
 //
-//  MTTHomeViewController.m
+//  MTTAbourtMeViewController.m
 //  MTTV2EX
 //
-//  Created by lyleKP on 2017/3/30.
+//  Created by lyleKP on 2017/4/26.
 //  Copyright © 2017年 lyle. All rights reserved.
 //
 
-#import "MTTHomeViewController.h"
+#import "MTTAboutMeViewController.h"
 
-@interface MTTHomeViewController ()
+@interface MTTAboutMeViewController ()
 
 @end
 
-@implementation MTTHomeViewController
+@implementation MTTAboutMeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.title = @"首页";
+    self.navigationItem.title = @"资料";
 }
 
 - (void)didReceiveMemoryWarning {

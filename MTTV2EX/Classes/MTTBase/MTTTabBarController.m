@@ -8,6 +8,10 @@
 
 #import "MTTTabBarController.h"
 #import "MTTHomeViewController.h"
+#import "MTTNodeViewController.h"
+#import "MTTMessageViewController.h"
+#import "MTTAboutMeViewController.h"
+
 #import "MTTNavigationViewController.h"
 @interface MTTTabBarController ()<UITabBarControllerDelegate>
 
@@ -28,10 +32,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
-    [self addChildViewController:[[MTTHomeViewController alloc] init] andSetUpTabbarOfViewControllerWithTitle:@"首页" andImage:@"tabbar_home" annSelectedImage:@"tabbar_home_selected" withNavgationContoller:YES];
-//     [self addChildViewController:[[MTTHomeViewController alloc] init] andSetUpTabbarOfViewControllerWithTitle:@"首页" andImage:@"tabbar_news" annSelectedImage:@"tabbar_news_selected" withNavgationContoller:YES];
-     [self addChildViewController:[[MTTHomeViewController alloc] init] andSetUpTabbarOfViewControllerWithTitle:@"首页" andImage:@"tabbar_order" annSelectedImage:@"tabbar_order_selected" withNavgationContoller:YES];
-     [self addChildViewController:[[MTTHomeViewController alloc] init] andSetUpTabbarOfViewControllerWithTitle:@"首页" andImage:@"tabbar_me" annSelectedImage:@"tabbar_me_selected" withNavgationContoller:YES];
+    [self addChildViewController:[[MTTHomeViewController alloc] init] andSetUpTabbarOfViewControllerWithTitle:nil andImage:@"tabbar_home" annSelectedImage:@"tabbar_home_selected" withNavgationContoller:YES];
+     [self addChildViewController:[[MTTNodeViewController alloc] init] andSetUpTabbarOfViewControllerWithTitle:nil andImage:@"tabbar_news" annSelectedImage:@"tabbar_news_selected" withNavgationContoller:YES];
+     [self addChildViewController:[[MTTMessageViewController alloc] init] andSetUpTabbarOfViewControllerWithTitle:nil andImage:@"tabbar_order" annSelectedImage:@"tabbar_order_selected" withNavgationContoller:YES];
+     [self addChildViewController:[[MTTAboutMeViewController alloc] init] andSetUpTabbarOfViewControllerWithTitle:nil andImage:@"tabbar_me" annSelectedImage:@"tabbar_me_selected" withNavgationContoller:YES];
+    
 }
 
 /**
@@ -67,6 +72,7 @@ andSetUpTabbarOfViewControllerWithTitle:(NSString *)title
     [self.tabBar insertSubview:bgView atIndex:0];
     self.tabBar.opaque = YES;
     
+#if 0
     childViewController.tabBarItem.title = title;
     
     childViewController.navigationItem.title = title;
@@ -79,7 +85,7 @@ andSetUpTabbarOfViewControllerWithTitle:(NSString *)title
     NSMutableDictionary * textSelectedAttributesDic = [[NSMutableDictionary alloc] init];
     textSelectedAttributesDic[NSForegroundColorAttributeName] = [UIColor orangeColor];
     [childViewController.tabBarItem setTitleTextAttributes:textSelectedAttributesDic forState:UIControlStateSelected];
-    
+#endif
     // 即使使用的图片有渲染颜色，也会被渲染成系统蓝色
     //    self.tabBarItem.selectedImage = [UIImage imageNamed:@"tabbar_s1"];
     //     childViewController.tabBarItem.image = [UIImage imageNamed:imageName];
@@ -92,6 +98,9 @@ andSetUpTabbarOfViewControllerWithTitle:(NSString *)title
     UIImage * selectedImage = [[UIImage imageNamed:selectedImageName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
     childViewController.tabBarItem.selectedImage = selectedImage;
+    
+    CGFloat offset = 5.0;
+    childViewController.tabBarItem.imageInsets = UIEdgeInsetsMake(offset, 0, - offset, 0);
     
     if(navTag) {
         MTTNavigationViewController *nav = [[MTTNavigationViewController alloc] initWithRootViewController:childViewController];

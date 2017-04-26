@@ -1,23 +1,23 @@
 //
-//  MTTBaseViewController.m
+//  MTTMessageViewController.m
 //  MTTV2EX
 //
-//  Created by lyleKP on 2017/3/30.
+//  Created by lyleKP on 2017/4/26.
 //  Copyright © 2017年 lyle. All rights reserved.
 //
 
-#import "MTTBaseViewController.h"
+#import "MTTMessageViewController.h"
 
-@interface MTTBaseViewController ()
+@interface MTTMessageViewController ()
 
 @end
 
-@implementation MTTBaseViewController
+@implementation MTTMessageViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-        self.view.backgroundColor = [UIColor colorWithHex:0xf2f2f5];
+    // Do any additional setup after loading the view from its nib.
+    self.navigationItem.title = @"通知";
 }
 
 - (void)didReceiveMemoryWarning {

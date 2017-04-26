@@ -1,23 +1,24 @@
 //
-//  MTTBaseViewController.m
+//  MTTHomeViewController.m
 //  MTTV2EX
 //
 //  Created by lyleKP on 2017/3/30.
 //  Copyright © 2017年 lyle. All rights reserved.
 //
 
-#import "MTTBaseViewController.h"
+#import "MTTHomeViewController.h"
 
-@interface MTTBaseViewController ()
+@interface MTTHomeViewController ()
 
 @end
 
-@implementation MTTBaseViewController
+@implementation MTTHomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-        self.view.backgroundColor = [UIColor colorWithHex:0xf2f2f5];
+    // Do any additional setup after loading the view from its nib.
+    self.navigationItem.title = @"主页";
+
 }
 
 - (void)didReceiveMemoryWarning {

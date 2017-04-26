@@ -22,6 +22,11 @@
     self.tabBarViewController = [[MTTTabBarController alloc] init];
     self.window.rootViewController = _tabBarViewController;
     [self.window makeKeyAndVisible];
+    
+    
+
+    
+    
     return YES;
 }
 
